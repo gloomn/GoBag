@@ -33,6 +33,7 @@
 
 ---
 ### 사용방법(How to use)
+* Release 탭에서 압축 폴더 다운 받은 뒤 압축 해제 하고 그냥 사용하시면 됩니다.
 * 품목 추가하고 싶은면 Add 버튼 누른 뒤 textbox 채운뒤 save 버튼 누르기
 * 품목 지우고 싶으면 datagridview에서 열 선택한 뒤 delete 버튼 누르기
 * 품목 고치고 싶으면 datagridview에서 열 선택한 뒤 textbox 내용 수정한 후 save 누르기
