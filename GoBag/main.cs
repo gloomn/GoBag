@@ -169,7 +169,7 @@ namespace GoBag
 
             if (dbCommand.ToUpper() == "UPDATE")
             {
-                command.Parameters.AddWithValue("AutoID", autoId_textbox.Text.Trim());
+                command.Parameters.AddWithValue("@AutoID", autoId_textbox.Text.Trim());
             }
         }
 
@@ -193,14 +193,34 @@ namespace GoBag
                         return;
                     }
 
-                    if(MessageBox.Show("ID: " + autoId_textbox.Text.Trim() + " -- Do you want to update the selected record? ", "Update selected record", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+                    if (MessageBox.Show("ID: " + autoId_textbox.Text.Trim() + " -- Do you want to update the selected record? ",
+                    "Update selected record", MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                     {
-                        return;
-                    }
-                    dbCommand = "UPDATE";
+                        dbCommand = "UPDATE";
+                        sql = "UPDATE supplies SET Name = @Name, Description = @Description, Piece = @Piece, Expiration = @Expiration, More = @More WHERE AutoID = @AutoID";
 
-                    sql = "UPDATE supplies SET Name = @Name, Description = @Description, Piece = @Piece, Expiration = @Expiration, More = @More";
-                    addCmdParameters();
+                        addCmdParameters();  // 파라미터 추가
+
+                        try
+                        {
+                            int result = command.ExecuteNonQuery();  // 쿼리 실행
+
+                            if (result == 0)
+                            {
+                                MessageBox.Show("No records were updated.", "Update failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                            else
+                            {
+                                MessageBox.Show("Record updated successfully.", "Update successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                updateDataBinding();  // 데이터 바인딩 갱신
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error: " + ex.Message, "Error while updating record", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
 
                 }
                 else if (addButton.Text.Equals("Cancel"))
