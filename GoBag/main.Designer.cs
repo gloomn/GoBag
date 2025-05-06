@@ -36,6 +36,7 @@
             this.navbar_close = new System.Windows.Forms.Button();
             this.navbar_icon = new System.Windows.Forms.PictureBox();
             this.sidebar = new System.Windows.Forms.Panel();
+            this.howtouse_button = new System.Windows.Forms.Button();
             this.editButton = new System.Windows.Forms.Button();
             this.expireWarningButton = new System.Windows.Forms.Button();
             this.sidebar_copyright = new System.Windows.Forms.Label();
@@ -74,9 +75,8 @@
             this.dataView = new System.Windows.Forms.DataGridView();
             this.editDatabase_title = new System.Windows.Forms.Label();
             this.howtouse_panel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.howtouse_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.navbar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navbar_picture_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navbar_icon)).BeginInit();
@@ -102,8 +102,9 @@
             this.navbar.Controls.Add(this.navbar_icon);
             this.navbar.Dock = System.Windows.Forms.DockStyle.Top;
             this.navbar.Location = new System.Drawing.Point(0, 0);
+            this.navbar.Margin = new System.Windows.Forms.Padding(4);
             this.navbar.Name = "navbar";
-            this.navbar.Size = new System.Drawing.Size(1264, 32);
+            this.navbar.Size = new System.Drawing.Size(1850, 48);
             this.navbar.TabIndex = 0;
             this.navbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainForm_MouseDown);
             this.navbar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mainForm_MouseMove);
@@ -114,18 +115,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(123, 15);
+            this.label1.Location = new System.Drawing.Point(176, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(71, 28);
             this.label1.TabIndex = 8;
             this.label1.Text = "V 1.0.0";
             // 
             // navbar_picture_logo
             // 
             this.navbar_picture_logo.Image = global::GoBag.Properties.Resources.navbar_picture_logo;
-            this.navbar_picture_logo.Location = new System.Drawing.Point(15, 4);
+            this.navbar_picture_logo.Location = new System.Drawing.Point(21, 6);
+            this.navbar_picture_logo.Margin = new System.Windows.Forms.Padding(4);
             this.navbar_picture_logo.Name = "navbar_picture_logo";
-            this.navbar_picture_logo.Size = new System.Drawing.Size(25, 25);
+            this.navbar_picture_logo.Size = new System.Drawing.Size(36, 38);
             this.navbar_picture_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.navbar_picture_logo.TabIndex = 5;
             this.navbar_picture_logo.TabStop = false;
@@ -136,9 +139,10 @@
             this.navbar_minimize.FlatAppearance.BorderSize = 0;
             this.navbar_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.navbar_minimize.Image = global::GoBag.Properties.Resources.navbar_minimize;
-            this.navbar_minimize.Location = new System.Drawing.Point(1200, 0);
+            this.navbar_minimize.Location = new System.Drawing.Point(1754, 0);
+            this.navbar_minimize.Margin = new System.Windows.Forms.Padding(4);
             this.navbar_minimize.Name = "navbar_minimize";
-            this.navbar_minimize.Size = new System.Drawing.Size(32, 32);
+            this.navbar_minimize.Size = new System.Drawing.Size(46, 48);
             this.navbar_minimize.TabIndex = 4;
             this.navbar_minimize.UseVisualStyleBackColor = true;
             this.navbar_minimize.Click += new System.EventHandler(this.navbar_minimize_Click);
@@ -149,9 +153,10 @@
             this.navbar_close.FlatAppearance.BorderSize = 0;
             this.navbar_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.navbar_close.Image = global::GoBag.Properties.Resources.navbar_close;
-            this.navbar_close.Location = new System.Drawing.Point(1232, 0);
+            this.navbar_close.Location = new System.Drawing.Point(1800, 0);
+            this.navbar_close.Margin = new System.Windows.Forms.Padding(4);
             this.navbar_close.Name = "navbar_close";
-            this.navbar_close.Size = new System.Drawing.Size(32, 32);
+            this.navbar_close.Size = new System.Drawing.Size(46, 48);
             this.navbar_close.TabIndex = 3;
             this.navbar_close.UseVisualStyleBackColor = true;
             this.navbar_close.Click += new System.EventHandler(this.navbar_close_Click);
@@ -161,9 +166,10 @@
             // navbar_icon
             // 
             this.navbar_icon.Image = global::GoBag.Properties.Resources.navbar_logo;
-            this.navbar_icon.Location = new System.Drawing.Point(32, 0);
+            this.navbar_icon.Location = new System.Drawing.Point(46, 0);
+            this.navbar_icon.Margin = new System.Windows.Forms.Padding(4);
             this.navbar_icon.Name = "navbar_icon";
-            this.navbar_icon.Size = new System.Drawing.Size(100, 32);
+            this.navbar_icon.Size = new System.Drawing.Size(143, 48);
             this.navbar_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.navbar_icon.TabIndex = 2;
             this.navbar_icon.TabStop = false;
@@ -177,10 +183,28 @@
             this.sidebar.Controls.Add(this.sidebar_copyright);
             this.sidebar.Controls.Add(this.sidebar_version);
             this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidebar.Location = new System.Drawing.Point(0, 32);
+            this.sidebar.Location = new System.Drawing.Point(0, 48);
+            this.sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(170, 649);
+            this.sidebar.Size = new System.Drawing.Size(243, 974);
             this.sidebar.TabIndex = 1;
+            // 
+            // howtouse_button
+            // 
+            this.howtouse_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.howtouse_button.FlatAppearance.BorderSize = 0;
+            this.howtouse_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.howtouse_button.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.howtouse_button.ForeColor = System.Drawing.Color.White;
+            this.howtouse_button.Location = new System.Drawing.Point(0, 132);
+            this.howtouse_button.Margin = new System.Windows.Forms.Padding(4);
+            this.howtouse_button.Name = "howtouse_button";
+            this.howtouse_button.Size = new System.Drawing.Size(244, 56);
+            this.howtouse_button.TabIndex = 8;
+            this.howtouse_button.Text = "How To Use";
+            this.howtouse_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.howtouse_button.UseVisualStyleBackColor = true;
+            this.howtouse_button.Click += new System.EventHandler(this.howtouse_button_Click);
             // 
             // editButton
             // 
@@ -189,9 +213,10 @@
             this.editButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editButton.ForeColor = System.Drawing.Color.White;
-            this.editButton.Location = new System.Drawing.Point(1, 198);
+            this.editButton.Location = new System.Drawing.Point(1, 69);
+            this.editButton.Margin = new System.Windows.Forms.Padding(4);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(171, 37);
+            this.editButton.Size = new System.Drawing.Size(244, 56);
             this.editButton.TabIndex = 7;
             this.editButton.Text = "Edit";
             this.editButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,9 +233,10 @@
             this.expireWarningButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.expireWarningButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expireWarningButton.ForeColor = System.Drawing.Color.White;
-            this.expireWarningButton.Location = new System.Drawing.Point(3, 156);
+            this.expireWarningButton.Location = new System.Drawing.Point(4, 6);
+            this.expireWarningButton.Margin = new System.Windows.Forms.Padding(4);
             this.expireWarningButton.Name = "expireWarningButton";
-            this.expireWarningButton.Size = new System.Drawing.Size(167, 37);
+            this.expireWarningButton.Size = new System.Drawing.Size(239, 56);
             this.expireWarningButton.TabIndex = 6;
             this.expireWarningButton.Text = "Expire Warning";
             this.expireWarningButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -224,9 +250,10 @@
             this.sidebar_copyright.AutoSize = true;
             this.sidebar_copyright.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar_copyright.ForeColor = System.Drawing.Color.White;
-            this.sidebar_copyright.Location = new System.Drawing.Point(0, 630);
+            this.sidebar_copyright.Location = new System.Drawing.Point(0, 945);
+            this.sidebar_copyright.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sidebar_copyright.Name = "sidebar_copyright";
-            this.sidebar_copyright.Size = new System.Drawing.Size(114, 17);
+            this.sidebar_copyright.Size = new System.Drawing.Size(171, 28);
             this.sidebar_copyright.TabIndex = 3;
             this.sidebar_copyright.Text = "ⓒ 2024 LeeKiJoon";
             // 
@@ -235,9 +262,10 @@
             this.sidebar_version.AutoSize = true;
             this.sidebar_version.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sidebar_version.ForeColor = System.Drawing.Color.White;
-            this.sidebar_version.Location = new System.Drawing.Point(120, 630);
+            this.sidebar_version.Location = new System.Drawing.Point(171, 945);
+            this.sidebar_version.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sidebar_version.Name = "sidebar_version";
-            this.sidebar_version.Size = new System.Drawing.Size(47, 17);
+            this.sidebar_version.Size = new System.Drawing.Size(70, 28);
             this.sidebar_version.TabIndex = 2;
             this.sidebar_version.Text = "V 1.0.0";
             // 
@@ -250,9 +278,10 @@
             this.expireWarning.Controls.Add(this.expireNextYearDataView);
             this.expireWarning.Controls.Add(this.expireDataView);
             this.expireWarning.Controls.Add(this.warning_title);
-            this.expireWarning.Location = new System.Drawing.Point(170, 32);
+            this.expireWarning.Location = new System.Drawing.Point(243, 48);
+            this.expireWarning.Margin = new System.Windows.Forms.Padding(4);
             this.expireWarning.Name = "expireWarning";
-            this.expireWarning.Size = new System.Drawing.Size(1094, 649);
+            this.expireWarning.Size = new System.Drawing.Size(1618, 974);
             this.expireWarning.TabIndex = 2;
             // 
             // currentYear_label
@@ -260,9 +289,10 @@
             this.currentYear_label.AutoSize = true;
             this.currentYear_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentYear_label.ForeColor = System.Drawing.Color.Black;
-            this.currentYear_label.Location = new System.Drawing.Point(168, 78);
+            this.currentYear_label.Location = new System.Drawing.Point(216, 112);
+            this.currentYear_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentYear_label.Name = "currentYear_label";
-            this.currentYear_label.Size = new System.Drawing.Size(158, 30);
+            this.currentYear_label.Size = new System.Drawing.Size(242, 45);
             this.currentYear_label.TabIndex = 20;
             this.currentYear_label.Text = "Expire Warning";
             this.currentYear_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -272,9 +302,10 @@
             this.nextYear_label.AutoSize = true;
             this.nextYear_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextYear_label.ForeColor = System.Drawing.Color.Black;
-            this.nextYear_label.Location = new System.Drawing.Point(500, 78);
+            this.nextYear_label.Location = new System.Drawing.Point(677, 112);
+            this.nextYear_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nextYear_label.Name = "nextYear_label";
-            this.nextYear_label.Size = new System.Drawing.Size(158, 30);
+            this.nextYear_label.Size = new System.Drawing.Size(242, 45);
             this.nextYear_label.TabIndex = 19;
             this.nextYear_label.Text = "Expire Warning";
             this.nextYear_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -284,9 +315,10 @@
             this.next2Year_label.AutoSize = true;
             this.next2Year_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.next2Year_label.ForeColor = System.Drawing.Color.Black;
-            this.next2Year_label.Location = new System.Drawing.Point(842, 78);
+            this.next2Year_label.Location = new System.Drawing.Point(1126, 112);
+            this.next2Year_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.next2Year_label.Name = "next2Year_label";
-            this.next2Year_label.Size = new System.Drawing.Size(158, 30);
+            this.next2Year_label.Size = new System.Drawing.Size(242, 45);
             this.next2Year_label.TabIndex = 18;
             this.next2Year_label.Text = "Expire Warning";
             this.next2Year_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -296,10 +328,12 @@
             this.expire2NextYearDataView.BackgroundColor = System.Drawing.Color.White;
             this.expire2NextYearDataView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.expire2NextYearDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.expire2NextYearDataView.Location = new System.Drawing.Point(746, 122);
+            this.expire2NextYearDataView.Location = new System.Drawing.Point(1088, 178);
+            this.expire2NextYearDataView.Margin = new System.Windows.Forms.Padding(4);
             this.expire2NextYearDataView.Name = "expire2NextYearDataView";
-            this.expire2NextYearDataView.RowTemplate.Height = 23;
-            this.expire2NextYearDataView.Size = new System.Drawing.Size(300, 465);
+            this.expire2NextYearDataView.RowHeadersWidth = 62;
+            this.expire2NextYearDataView.RowTemplate.Height = 32;
+            this.expire2NextYearDataView.Size = new System.Drawing.Size(429, 698);
             this.expire2NextYearDataView.TabIndex = 17;
             // 
             // expireNextYearDataView
@@ -307,10 +341,12 @@
             this.expireNextYearDataView.BackgroundColor = System.Drawing.Color.White;
             this.expireNextYearDataView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.expireNextYearDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.expireNextYearDataView.Location = new System.Drawing.Point(398, 122);
+            this.expireNextYearDataView.Location = new System.Drawing.Point(633, 178);
+            this.expireNextYearDataView.Margin = new System.Windows.Forms.Padding(4);
             this.expireNextYearDataView.Name = "expireNextYearDataView";
-            this.expireNextYearDataView.RowTemplate.Height = 23;
-            this.expireNextYearDataView.Size = new System.Drawing.Size(327, 465);
+            this.expireNextYearDataView.RowHeadersWidth = 62;
+            this.expireNextYearDataView.RowTemplate.Height = 32;
+            this.expireNextYearDataView.Size = new System.Drawing.Size(467, 698);
             this.expireNextYearDataView.TabIndex = 16;
             // 
             // expireDataView
@@ -318,10 +354,12 @@
             this.expireDataView.BackgroundColor = System.Drawing.Color.White;
             this.expireDataView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.expireDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.expireDataView.Location = new System.Drawing.Point(80, 122);
+            this.expireDataView.Location = new System.Drawing.Point(90, 178);
+            this.expireDataView.Margin = new System.Windows.Forms.Padding(4);
             this.expireDataView.Name = "expireDataView";
-            this.expireDataView.RowTemplate.Height = 23;
-            this.expireDataView.Size = new System.Drawing.Size(300, 465);
+            this.expireDataView.RowHeadersWidth = 62;
+            this.expireDataView.RowTemplate.Height = 32;
+            this.expireDataView.Size = new System.Drawing.Size(450, 698);
             this.expireDataView.TabIndex = 15;
             // 
             // warning_title
@@ -329,9 +367,10 @@
             this.warning_title.AutoSize = true;
             this.warning_title.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.warning_title.ForeColor = System.Drawing.Color.Black;
-            this.warning_title.Location = new System.Drawing.Point(2, 3);
+            this.warning_title.Location = new System.Drawing.Point(3, 4);
+            this.warning_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.warning_title.Name = "warning_title";
-            this.warning_title.Size = new System.Drawing.Size(158, 30);
+            this.warning_title.Size = new System.Drawing.Size(242, 45);
             this.warning_title.TabIndex = 14;
             this.warning_title.Text = "Expire Warning";
             // 
@@ -341,9 +380,10 @@
             this.edit.Controls.Add(this.insertBox);
             this.edit.Controls.Add(this.dataView);
             this.edit.Controls.Add(this.editDatabase_title);
-            this.edit.Location = new System.Drawing.Point(170, 32);
+            this.edit.Location = new System.Drawing.Point(243, 48);
+            this.edit.Margin = new System.Windows.Forms.Padding(4);
             this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(1094, 649);
+            this.edit.Size = new System.Drawing.Size(1618, 974);
             this.edit.TabIndex = 13;
             // 
             // positionLabel
@@ -351,9 +391,10 @@
             this.positionLabel.AutoSize = true;
             this.positionLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.positionLabel.ForeColor = System.Drawing.Color.Gray;
-            this.positionLabel.Location = new System.Drawing.Point(7, 630);
+            this.positionLabel.Location = new System.Drawing.Point(10, 945);
+            this.positionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.positionLabel.Name = "positionLabel";
-            this.positionLabel.Size = new System.Drawing.Size(27, 17);
+            this.positionLabel.Size = new System.Drawing.Size(42, 28);
             this.positionLabel.TabIndex = 8;
             this.positionLabel.Text = "0/0";
             // 
@@ -381,9 +422,11 @@
             this.insertBox.Controls.Add(this.name_textbox);
             this.insertBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.insertBox.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.insertBox.Location = new System.Drawing.Point(7, 36);
+            this.insertBox.Location = new System.Drawing.Point(10, 54);
+            this.insertBox.Margin = new System.Windows.Forms.Padding(4);
             this.insertBox.Name = "insertBox";
-            this.insertBox.Size = new System.Drawing.Size(410, 579);
+            this.insertBox.Padding = new System.Windows.Forms.Padding(4);
+            this.insertBox.Size = new System.Drawing.Size(586, 868);
             this.insertBox.TabIndex = 10;
             this.insertBox.TabStop = false;
             this.insertBox.Text = "Insert Box";
@@ -396,9 +439,10 @@
             this.moveLast_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.moveLast_button.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moveLast_button.ForeColor = System.Drawing.Color.White;
-            this.moveLast_button.Location = new System.Drawing.Point(315, 283);
+            this.moveLast_button.Location = new System.Drawing.Point(450, 424);
+            this.moveLast_button.Margin = new System.Windows.Forms.Padding(4);
             this.moveLast_button.Name = "moveLast_button";
-            this.moveLast_button.Size = new System.Drawing.Size(70, 50);
+            this.moveLast_button.Size = new System.Drawing.Size(100, 75);
             this.moveLast_button.TabIndex = 32;
             this.moveLast_button.Text = ">>";
             this.moveLast_button.UseVisualStyleBackColor = false;
@@ -412,9 +456,10 @@
             this.movePrevious_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.movePrevious_button.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.movePrevious_button.ForeColor = System.Drawing.Color.White;
-            this.movePrevious_button.Location = new System.Drawing.Point(117, 283);
+            this.movePrevious_button.Location = new System.Drawing.Point(167, 424);
+            this.movePrevious_button.Margin = new System.Windows.Forms.Padding(4);
             this.movePrevious_button.Name = "movePrevious_button";
-            this.movePrevious_button.Size = new System.Drawing.Size(70, 50);
+            this.movePrevious_button.Size = new System.Drawing.Size(100, 75);
             this.movePrevious_button.TabIndex = 31;
             this.movePrevious_button.Text = "<";
             this.movePrevious_button.UseVisualStyleBackColor = false;
@@ -428,9 +473,10 @@
             this.moveNext_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.moveNext_button.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moveNext_button.ForeColor = System.Drawing.Color.White;
-            this.moveNext_button.Location = new System.Drawing.Point(216, 283);
+            this.moveNext_button.Location = new System.Drawing.Point(309, 424);
+            this.moveNext_button.Margin = new System.Windows.Forms.Padding(4);
             this.moveNext_button.Name = "moveNext_button";
-            this.moveNext_button.Size = new System.Drawing.Size(70, 50);
+            this.moveNext_button.Size = new System.Drawing.Size(100, 75);
             this.moveNext_button.TabIndex = 30;
             this.moveNext_button.Text = ">";
             this.moveNext_button.UseVisualStyleBackColor = false;
@@ -444,9 +490,10 @@
             this.moveFirst_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.moveFirst_button.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moveFirst_button.ForeColor = System.Drawing.Color.White;
-            this.moveFirst_button.Location = new System.Drawing.Point(18, 283);
+            this.moveFirst_button.Location = new System.Drawing.Point(26, 424);
+            this.moveFirst_button.Margin = new System.Windows.Forms.Padding(4);
             this.moveFirst_button.Name = "moveFirst_button";
-            this.moveFirst_button.Size = new System.Drawing.Size(70, 50);
+            this.moveFirst_button.Size = new System.Drawing.Size(100, 75);
             this.moveFirst_button.TabIndex = 29;
             this.moveFirst_button.Text = "<<";
             this.moveFirst_button.UseVisualStyleBackColor = false;
@@ -457,17 +504,19 @@
             this.autoId_label.AutoSize = true;
             this.autoId_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.autoId_label.ForeColor = System.Drawing.Color.Black;
-            this.autoId_label.Location = new System.Drawing.Point(13, 63);
+            this.autoId_label.Location = new System.Drawing.Point(19, 94);
+            this.autoId_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.autoId_label.Name = "autoId_label";
-            this.autoId_label.Size = new System.Drawing.Size(34, 30);
+            this.autoId_label.Size = new System.Drawing.Size(52, 45);
             this.autoId_label.TabIndex = 27;
             this.autoId_label.Text = "ID";
             // 
             // autoId_textbox
             // 
-            this.autoId_textbox.Location = new System.Drawing.Point(150, 66);
+            this.autoId_textbox.Location = new System.Drawing.Point(214, 99);
+            this.autoId_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.autoId_textbox.Name = "autoId_textbox";
-            this.autoId_textbox.Size = new System.Drawing.Size(254, 27);
+            this.autoId_textbox.Size = new System.Drawing.Size(361, 37);
             this.autoId_textbox.TabIndex = 28;
             // 
             // saveButton
@@ -478,9 +527,10 @@
             this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.Color.White;
-            this.saveButton.Location = new System.Drawing.Point(11, 524);
+            this.saveButton.Location = new System.Drawing.Point(16, 786);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(4);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(117, 37);
+            this.saveButton.Size = new System.Drawing.Size(167, 56);
             this.saveButton.TabIndex = 15;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = false;
@@ -488,16 +538,18 @@
             // 
             // expiration_textbox
             // 
-            this.expiration_textbox.Location = new System.Drawing.Point(150, 194);
+            this.expiration_textbox.Location = new System.Drawing.Point(214, 291);
+            this.expiration_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.expiration_textbox.Name = "expiration_textbox";
-            this.expiration_textbox.Size = new System.Drawing.Size(254, 27);
+            this.expiration_textbox.Size = new System.Drawing.Size(361, 37);
             this.expiration_textbox.TabIndex = 26;
             // 
             // more_textbox
             // 
-            this.more_textbox.Location = new System.Drawing.Point(150, 225);
+            this.more_textbox.Location = new System.Drawing.Point(214, 338);
+            this.more_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.more_textbox.Name = "more_textbox";
-            this.more_textbox.Size = new System.Drawing.Size(254, 27);
+            this.more_textbox.Size = new System.Drawing.Size(361, 37);
             this.more_textbox.TabIndex = 25;
             // 
             // deleteButton
@@ -508,9 +560,10 @@
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(283, 464);
+            this.deleteButton.Location = new System.Drawing.Point(404, 696);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(117, 37);
+            this.deleteButton.Size = new System.Drawing.Size(167, 56);
             this.deleteButton.TabIndex = 13;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = false;
@@ -524,9 +577,10 @@
             this.refreshButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.refreshButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refreshButton.ForeColor = System.Drawing.Color.White;
-            this.refreshButton.Location = new System.Drawing.Point(11, 464);
+            this.refreshButton.Location = new System.Drawing.Point(16, 696);
+            this.refreshButton.Margin = new System.Windows.Forms.Padding(4);
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(117, 37);
+            this.refreshButton.Size = new System.Drawing.Size(167, 56);
             this.refreshButton.TabIndex = 12;
             this.refreshButton.Text = "Refresh";
             this.refreshButton.UseVisualStyleBackColor = false;
@@ -534,9 +588,10 @@
             // 
             // piece_textbox
             // 
-            this.piece_textbox.Location = new System.Drawing.Point(150, 161);
+            this.piece_textbox.Location = new System.Drawing.Point(214, 242);
+            this.piece_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.piece_textbox.Name = "piece_textbox";
-            this.piece_textbox.Size = new System.Drawing.Size(254, 27);
+            this.piece_textbox.Size = new System.Drawing.Size(361, 37);
             this.piece_textbox.TabIndex = 23;
             // 
             // addButton
@@ -547,9 +602,10 @@
             this.addButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(146, 464);
+            this.addButton.Location = new System.Drawing.Point(209, 696);
+            this.addButton.Margin = new System.Windows.Forms.Padding(4);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(117, 37);
+            this.addButton.Size = new System.Drawing.Size(167, 56);
             this.addButton.TabIndex = 11;
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = false;
@@ -557,9 +613,10 @@
             // 
             // description_textbox
             // 
-            this.description_textbox.Location = new System.Drawing.Point(150, 130);
+            this.description_textbox.Location = new System.Drawing.Point(214, 195);
+            this.description_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.description_textbox.Name = "description_textbox";
-            this.description_textbox.Size = new System.Drawing.Size(254, 27);
+            this.description_textbox.Size = new System.Drawing.Size(361, 37);
             this.description_textbox.TabIndex = 22;
             // 
             // more_label
@@ -567,9 +624,10 @@
             this.more_label.AutoSize = true;
             this.more_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.more_label.ForeColor = System.Drawing.Color.Black;
-            this.more_label.Location = new System.Drawing.Point(13, 216);
+            this.more_label.Location = new System.Drawing.Point(19, 324);
+            this.more_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.more_label.Name = "more_label";
-            this.more_label.Size = new System.Drawing.Size(64, 30);
+            this.more_label.Size = new System.Drawing.Size(98, 45);
             this.more_label.TabIndex = 21;
             this.more_label.Text = "More";
             // 
@@ -578,9 +636,10 @@
             this.expiration_label.AutoSize = true;
             this.expiration_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expiration_label.ForeColor = System.Drawing.Color.Black;
-            this.expiration_label.Location = new System.Drawing.Point(13, 186);
+            this.expiration_label.Location = new System.Drawing.Point(19, 279);
+            this.expiration_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.expiration_label.Name = "expiration_label";
-            this.expiration_label.Size = new System.Drawing.Size(110, 30);
+            this.expiration_label.Size = new System.Drawing.Size(167, 45);
             this.expiration_label.TabIndex = 20;
             this.expiration_label.Text = "Expiration";
             // 
@@ -589,9 +648,10 @@
             this.piece_label.AutoSize = true;
             this.piece_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.piece_label.ForeColor = System.Drawing.Color.Black;
-            this.piece_label.Location = new System.Drawing.Point(13, 156);
+            this.piece_label.Location = new System.Drawing.Point(19, 234);
+            this.piece_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.piece_label.Name = "piece_label";
-            this.piece_label.Size = new System.Drawing.Size(62, 30);
+            this.piece_label.Size = new System.Drawing.Size(96, 45);
             this.piece_label.TabIndex = 19;
             this.piece_label.Text = "Piece";
             // 
@@ -600,9 +660,10 @@
             this.description_label.AutoSize = true;
             this.description_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.description_label.ForeColor = System.Drawing.Color.Black;
-            this.description_label.Location = new System.Drawing.Point(13, 126);
+            this.description_label.Location = new System.Drawing.Point(19, 189);
+            this.description_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.description_label.Name = "description_label";
-            this.description_label.Size = new System.Drawing.Size(122, 30);
+            this.description_label.Size = new System.Drawing.Size(186, 45);
             this.description_label.TabIndex = 18;
             this.description_label.Text = "Description";
             // 
@@ -611,17 +672,19 @@
             this.name_label.AutoSize = true;
             this.name_label.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_label.ForeColor = System.Drawing.Color.Black;
-            this.name_label.Location = new System.Drawing.Point(13, 96);
+            this.name_label.Location = new System.Drawing.Point(19, 144);
+            this.name_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name_label.Name = "name_label";
-            this.name_label.Size = new System.Drawing.Size(70, 30);
+            this.name_label.Size = new System.Drawing.Size(107, 45);
             this.name_label.TabIndex = 16;
             this.name_label.Text = "Name";
             // 
             // name_textbox
             // 
-            this.name_textbox.Location = new System.Drawing.Point(150, 99);
+            this.name_textbox.Location = new System.Drawing.Point(214, 148);
+            this.name_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.name_textbox.Name = "name_textbox";
-            this.name_textbox.Size = new System.Drawing.Size(254, 27);
+            this.name_textbox.Size = new System.Drawing.Size(361, 37);
             this.name_textbox.TabIndex = 17;
             // 
             // dataView
@@ -629,11 +692,13 @@
             this.dataView.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataView.Location = new System.Drawing.Point(423, 45);
+            this.dataView.Location = new System.Drawing.Point(604, 68);
+            this.dataView.Margin = new System.Windows.Forms.Padding(4);
             this.dataView.Name = "dataView";
             this.dataView.ReadOnly = true;
-            this.dataView.RowTemplate.Height = 23;
-            this.dataView.Size = new System.Drawing.Size(635, 592);
+            this.dataView.RowHeadersWidth = 62;
+            this.dataView.RowTemplate.Height = 32;
+            this.dataView.Size = new System.Drawing.Size(987, 888);
             this.dataView.TabIndex = 9;
             this.dataView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataView_CellMouseClick);
             this.dataView.SelectionChanged += new System.EventHandler(this.dataView_SelectionChanged);
@@ -643,9 +708,10 @@
             this.editDatabase_title.AutoSize = true;
             this.editDatabase_title.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editDatabase_title.ForeColor = System.Drawing.Color.Black;
-            this.editDatabase_title.Location = new System.Drawing.Point(2, 0);
+            this.editDatabase_title.Location = new System.Drawing.Point(3, 0);
+            this.editDatabase_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.editDatabase_title.Name = "editDatabase_title";
-            this.editDatabase_title.Size = new System.Drawing.Size(145, 30);
+            this.editDatabase_title.Size = new System.Drawing.Size(221, 45);
             this.editDatabase_title.TabIndex = 8;
             this.editDatabase_title.Text = "Edit Database";
             // 
@@ -653,60 +719,48 @@
             // 
             this.howtouse_panel.Controls.Add(this.pictureBox1);
             this.howtouse_panel.Controls.Add(this.label2);
-            this.howtouse_panel.Location = new System.Drawing.Point(170, 32);
+            this.howtouse_panel.Location = new System.Drawing.Point(243, 48);
+            this.howtouse_panel.Margin = new System.Windows.Forms.Padding(4);
             this.howtouse_panel.Name = "howtouse_panel";
-            this.howtouse_panel.Size = new System.Drawing.Size(1094, 649);
+            this.howtouse_panel.Size = new System.Drawing.Size(1614, 974);
             this.howtouse_panel.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(36, 68);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1481, 873);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(2, 3);
+            this.label2.Location = new System.Drawing.Point(3, 4);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 30);
+            this.label2.Size = new System.Drawing.Size(186, 45);
             this.label2.TabIndex = 15;
             this.label2.Text = "How to use";
             // 
-            // howtouse_button
-            // 
-            this.howtouse_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.howtouse_button.FlatAppearance.BorderSize = 0;
-            this.howtouse_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.howtouse_button.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.howtouse_button.ForeColor = System.Drawing.Color.White;
-            this.howtouse_button.Location = new System.Drawing.Point(0, 240);
-            this.howtouse_button.Name = "howtouse_button";
-            this.howtouse_button.Size = new System.Drawing.Size(171, 37);
-            this.howtouse_button.TabIndex = 8;
-            this.howtouse_button.Text = "How To Use";
-            this.howtouse_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.howtouse_button.UseVisualStyleBackColor = true;
-            this.howtouse_button.Click += new System.EventHandler(this.howtouse_button_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 45);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1037, 582);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1850, 1022);
             this.Controls.Add(this.sidebar);
             this.Controls.Add(this.navbar);
-            this.Controls.Add(this.howtouse_panel);
             this.Controls.Add(this.expireWarning);
             this.Controls.Add(this.edit);
+            this.Controls.Add(this.howtouse_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GoBag V1.0.0";

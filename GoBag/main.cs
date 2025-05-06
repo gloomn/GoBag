@@ -39,6 +39,22 @@ namespace GoBag
             this.expireNextYearDataView.Font = new Font("Segoe UI Semibold", 13, FontStyle.Bold);
             this.expireDataView.Font = new Font("Segoe UI Semibold", 13, FontStyle.Bold);
             this.autoId_textbox.Enabled = false;
+            //Data Grid View Double Buffering
+            typeof(DataGridView).InvokeMember("DoubleBuffered",
+            System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.SetProperty,
+            null, dataView, new object[] { true });
+
+            typeof(DataGridView).InvokeMember("DoubleBuffered",
+            System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.SetProperty,
+            null, expireDataView, new object[] { true });
+
+            typeof(DataGridView).InvokeMember("DoubleBuffered",
+            System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.SetProperty,
+            null, expireNextYearDataView, new object[] { true });
+
+            typeof(DataGridView).InvokeMember("DoubleBuffered",
+            System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.SetProperty,
+            null, expire2NextYearDataView, new object[] { true });
         }
 
 
