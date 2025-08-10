@@ -26,7 +26,7 @@ Toy Project
 * System.Data.SQLite V1.0.118(used for local database).
 
 ---
-### 사용방법(How to use)
+### How to use
 * Download the compressed folder from the Release tab, extract it, and run it directly.
 * To add an item: click the Add button, fill in the textboxes, then click Save.
 * To delete an item: select a row in the DataGridView, then click Delete.
